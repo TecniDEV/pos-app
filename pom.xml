@@ -4,18 +4,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>dev.tecni</groupId>
+  <groupId>dev.tecni.pos</groupId>
   <artifactId>pos-app</artifactId>
   <version>0.1</version>
 
   <name>pos-app</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/TecniDEV/pos-app</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -25,6 +24,37 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.7.7</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf -->
+    <dependency>
+        <groupId>com.formdev</groupId>
+        <artifactId>flatlaf</artifactId>
+        <version>3.6</version>
+        <scope>runtime</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.38</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.j256.ormlite/ormlite-jdbc -->
+    <dependency>
+        <groupId>com.j256.ormlite</groupId>
+        <artifactId>ormlite-jdbc</artifactId>
+        <version>6.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/at.favre.lib/bcrypt -->
+   <dependency>
+       <groupId>at.favre.lib</groupId>
+       <artifactId>bcrypt</artifactId>
+       <version>0.10.2</version>
+   </dependency>
   </dependencies>
 
   <build>
