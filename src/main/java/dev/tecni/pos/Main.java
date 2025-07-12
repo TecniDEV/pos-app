@@ -15,6 +15,11 @@ import dev.tecni.pos.views.LoginView;
  */
 public class Main 
 {
+    /**
+     * Init application GUI
+     * Load Login View dark/light mode or Configuration wizard
+     * @param args
+     */
     public static void main( String[] args )
     {
         File properties = new File(AppConfig.fileName);
